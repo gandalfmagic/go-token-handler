@@ -2,7 +2,6 @@
 test:
 	go test ./... -coverprofile cover.out -json > test-report.json
 
-
 .PHONY: test-integration-start
 test-integration-start:
 	docker run --name postgresql-integration-test-api-gateway --rm -d -p 5532:5432 -e POSTGRES_DB=sessions -e POSTGRES_PASSWORD=postgres postgres:15.2-alpine3.17
@@ -14,10 +13,8 @@ test-integration-stop:
 
 .PHONY: test-integration
 test-integration: test-integration-start
-#	go test -tags=integration -coverprofile cover.out -json ./... > test-report.json || (docker stop postgresql-integration-test-api-gateway; exit 1)
-	go test ./... -tags=integration -coverprofile cover.out || (docker stop postgresql-integration-test-api-gateway; exit 1)
+	go test ./... -tags=integration -coverprofile cover.out -json ./... > test-report.json || (docker stop postgresql-integration-test-api-gateway; exit 1)
 	docker stop postgresql-integration-test-api-gateway
-
 
 .PHONY: start-keycloak
 start-keycloak:
