@@ -1,25 +1,25 @@
-token-handler
+go-token-handler
 -------------------------------
 
 # Considerations
 
-This project is born because I was curious on how to use the Backend For Frontend pattern to avoid the OIDC login from a
-frontend application.
+This project was born because I was curious on how to use the backend-for-frontend pattern to avoid using the web client
+to login directly to a OIDC auth server.  The downside of managing the login from the web client is that we need to
+store the tokens on the browser, where an attacker could easily try and stole it.
 
-The downside of using the client for the login to an OIDC auth server is that we need to store the tokens on the
-browser, where an attacker could easily try and stole it.
+The `go-token-handler` service implements the token-handler pattern to move the actual handling of the login to the OIDC
+auth server to the backend, by managing the JWT tokens internally and storing them on a database. The frontend web
+application will only receive a secure http-only session token, that `go-token-handler` will maintain associated to the
+respective JWT in the database.
 
-This backend service implements the token-handler pattern to handle the login to the OIDC auth server, and then to store
-the tokens on internally on a database. The frontend web application will only receive a secure http-only session token,
-that will be linked to the tokens in the database.
-
-The service also provides a proxy service for all the other backend services that the web application needs to reach.
+The `go-token-handler` service also provides a proxy to access all the other backend services that the web client
+application needs to reach.
 When the web client needs to send a request to a specific backend service, it will call the corresponding proxy endpoint
-on the token-handler. Then the token-handler will use the session cookie to get the OIDC access-token and inject it into
-the request headers.
+configured on `go-token-handler`. Then `go-token-handler` will use the session cookie to get the JWT access-token and
+inject it into the request headers.
 
-The token-handler will take care of maintain the access-tokens valid by renewing them, and also to maintain the database
-storage by cleaning the expired sessions.
+The token-handler will take care of maintaining the access-tokens by renewing them, and also of cleaning the expired
+sessions in the database.
 
 
 ## Ensure the session cookie is secure
