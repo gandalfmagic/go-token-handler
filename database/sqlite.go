@@ -11,6 +11,7 @@ import (
 
 	"github.com/gandalfmagic/encryption"
 	"github.com/google/uuid"
+	_ "github.com/mattn/go-sqlite3"
 	"go.opentelemetry.io/otel/attribute"
 	"go.opentelemetry.io/otel/codes"
 )

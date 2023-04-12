@@ -19,7 +19,6 @@ import (
 	"github.com/gandalfmagic/go-token-handler/zlogger"
 
 	"github.com/gandalfmagic/encryption"
-	_ "github.com/mattn/go-sqlite3"
 	"go.uber.org/zap"
 )
 
