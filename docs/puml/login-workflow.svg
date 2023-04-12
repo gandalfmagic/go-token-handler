@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="us-ascii" standalone="no"?>
+<svg xmlns="http://www.w3.org/2000/svg" contentStyleType="text/css" height="535px" preserveAspectRatio="none"
+     style="width:648px;height:535px;background:#FFFFFF;" version="1.1" viewBox="0 0 648 535" width="648px"
+     zoomAndPan="magnify">
+    <defs/>
+    <g>
+        <rect fill="#FFFFFF" height="406.4722" style="stroke:#181818;stroke-width:1.0;" width="10" x="303" y="72.7739"/>
+        <rect fill="#FFFFFF" height="31.706" style="stroke:#181818;stroke-width:1.0;" width="10" x="591" y="167.892"/>
+        <rect fill="#FFFFFF" height="31.706" style="stroke:#181818;stroke-width:1.0;" width="10" x="591" y="339.4221"/>
+        <line style="stroke:#181818;stroke-width:0.5;stroke-dasharray:5.0,5.0;" x1="69" x2="69" y1="39.0679"
+              y2="497.2461"/>
+        <line style="stroke:#181818;stroke-width:0.5;stroke-dasharray:5.0,5.0;" x1="307.5" x2="307.5" y1="39.0679"
+              y2="497.2461"/>
+        <line style="stroke:#181818;stroke-width:0.5;stroke-dasharray:5.0,5.0;" x1="595.5" x2="595.5" y1="39.0679"
+              y2="497.2461"/>
+        <rect fill="#E2E2F0" height="33.0679" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="128"
+              x="5" y="5"/>
+        <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="114" x="12"
+              y="26.9659">User (Web client)
+        </text>
+        <rect fill="#E2E2F0" height="33.0679" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="128"
+              x="5" y="496.2461"/>
+        <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="114" x="12"
+              y="518.2121">User (Web client)
+        </text>
+        <rect fill="#E2E2F0" height="33.0679" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="111"
+              x="252.5" y="5"/>
+        <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="97" x="259.5"
+              y="26.9659">Token handler
+        </text>
+        <rect fill="#E2E2F0" height="33.0679" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="111"
+              x="252.5" y="496.2461"/>
+        <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="97" x="259.5"
+              y="518.2121">Token handler
+        </text>
+        <rect fill="#E2E2F0" height="33.0679" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="93"
+              x="549.5" y="5"/>
+        <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="79" x="556.5"
+              y="26.9659">Auth Server
+        </text>
+        <rect fill="#E2E2F0" height="33.0679" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="93"
+              x="549.5" y="496.2461"/>
+        <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="79" x="556.5"
+              y="518.2121">Auth Server
+        </text>
+        <rect fill="#FFFFFF" height="406.4722" style="stroke:#181818;stroke-width:1.0;" width="10" x="303" y="72.7739"/>
+        <rect fill="#FFFFFF" height="31.706" style="stroke:#181818;stroke-width:1.0;" width="10" x="591" y="167.892"/>
+        <rect fill="#FFFFFF" height="31.706" style="stroke:#181818;stroke-width:1.0;" width="10" x="591" y="339.4221"/>
+        <polygon fill="#181818" points="291,68.7739,301,72.7739,291,76.7739,295,72.7739"
+                 style="stroke:#181818;stroke-width:1.0;"/>
+        <line style="stroke:#181818;stroke-width:1.0;" x1="69" x2="297" y1="72.7739" y2="72.7739"/>
+        <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="141" x="76"
+              y="66.9649">Authentication Request
+        </text>
+        <polygon fill="#008B8B" points="80,100.4799,70,104.4799,80,108.4799,76,104.4799"
+                 style="stroke:#008B8B;stroke-width:1.0;"/>
+        <line style="stroke:#008B8B;stroke-width:1.0;stroke-dasharray:2.0,2.0;" x1="74" x2="302" y1="104.4799"
+              y2="104.4799"/>
+        <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="210" x="86"
+              y="98.6709">Save random state in secure cookie
+        </text>
+        <polygon fill="#181818" points="80,132.186,70,136.186,80,140.186,76,136.186"
+                 style="stroke:#181818;stroke-width:1.0;"/>
+        <line style="stroke:#181818;stroke-width:1.0;stroke-dasharray:2.0,2.0;" x1="74" x2="302" y1="136.186"
+              y2="136.186"/>
+        <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="136" x="86"
+              y="130.377">Redirect to OIDC Login
+        </text>
+        <polygon fill="#181818" points="579,163.892,589,167.892,579,171.892,583,167.892"
+                 style="stroke:#181818;stroke-width:1.0;"/>
+        <line style="stroke:#181818;stroke-width:1.0;" x1="69" x2="585" y1="167.892" y2="167.892"/>
+        <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="141" x="76"
+              y="162.083">Authentication Request
+        </text>
+        <polygon fill="#181818" points="324,195.598,314,199.598,324,203.598,320,199.598"
+                 style="stroke:#181818;stroke-width:1.0;"/>
+        <line style="stroke:#181818;stroke-width:1.0;stroke-dasharray:2.0,2.0;" x1="318" x2="595" y1="199.598"
+              y2="199.598"/>
+        <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="83" x="330"
+              y="193.789">OIDC Callback
+        </text>
+        <polygon fill="#008B8B" points="80,227.304,70,231.304,80,235.304,76,231.304"
+                 style="stroke:#008B8B;stroke-width:1.0;"/>
+        <line style="stroke:#008B8B;stroke-width:1.0;stroke-dasharray:2.0,2.0;" x1="74" x2="302" y1="231.304"
+              y2="231.304"/>
+        <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="172" x="86"
+              y="225.495">Ask for state in secure cookie
+        </text>
+        <polygon fill="#008B8B" points="291,259.01,301,263.01,291,267.01,295,263.01"
+                 style="stroke:#008B8B;stroke-width:1.0;"/>
+        <line style="stroke:#008B8B;stroke-width:1.0;stroke-dasharray:2.0,2.0;" x1="69" x2="297" y1="263.01"
+              y2="263.01"/>
+        <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="75" x="76"
+              y="257.201">Return State
+        </text>
+        <line style="stroke:#008B8B;stroke-width:1.0;" x1="313" x2="355" y1="294.716" y2="294.716"/>
+        <line style="stroke:#008B8B;stroke-width:1.0;" x1="355" x2="355" y1="294.716" y2="307.716"/>
+        <line style="stroke:#008B8B;stroke-width:1.0;" x1="314" x2="355" y1="307.716" y2="307.716"/>
+        <polygon fill="#008B8B" points="324,303.716,314,307.716,324,311.716,320,307.716"
+                 style="stroke:#008B8B;stroke-width:1.0;"/>
+        <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="68" x="320"
+              y="288.907">Verify State
+        </text>
+        <polygon fill="#181818" points="579,335.4221,589,339.4221,579,343.4221,583,339.4221"
+                 style="stroke:#181818;stroke-width:1.0;"/>
+        <line style="stroke:#181818;stroke-width:1.0;" x1="313" x2="585" y1="339.4221" y2="339.4221"/>
+        <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="79" x="320"
+              y="333.6131">Ask for token
+        </text>
+        <polygon fill="#181818" points="324,367.1281,314,371.1281,324,375.1281,320,371.1281"
+                 style="stroke:#181818;stroke-width:1.0;"/>
+        <line style="stroke:#181818;stroke-width:1.0;stroke-dasharray:2.0,2.0;" x1="318" x2="595" y1="371.1281"
+              y2="371.1281"/>
+        <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="102" x="330"
+              y="365.3191">Return the token
+        </text>
+        <line style="stroke:#008B8B;stroke-width:1.0;" x1="313" x2="355" y1="402.8341" y2="402.8341"/>
+        <line style="stroke:#008B8B;stroke-width:1.0;" x1="355" x2="355" y1="402.8341" y2="415.8341"/>
+        <line style="stroke:#008B8B;stroke-width:1.0;" x1="314" x2="355" y1="415.8341" y2="415.8341"/>
+        <polygon fill="#008B8B" points="324,411.8341,314,415.8341,324,419.8341,320,415.8341"
+                 style="stroke:#008B8B;stroke-width:1.0;"/>
+        <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="264" x="320"
+              y="397.0251">Save token and link it to a new client-session
+        </text>
+        <polygon fill="#008B8B" points="80,443.5401,70,447.5401,80,451.5401,76,447.5401"
+                 style="stroke:#008B8B;stroke-width:1.0;"/>
+        <line style="stroke:#008B8B;stroke-width:1.0;stroke-dasharray:2.0,2.0;" x1="74" x2="302" y1="447.5401"
+              y2="447.5401"/>
+        <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="209" x="86"
+              y="441.7311">Save client-session in secure cookie
+        </text>
+        <polygon fill="#181818" points="80,475.2461,70,479.2461,80,483.2461,76,479.2461"
+                 style="stroke:#181818;stroke-width:1.0;"/>
+        <line style="stroke:#181818;stroke-width:1.0;stroke-dasharray:2.0,2.0;" x1="74" x2="307" y1="479.2461"
+              y2="479.2461"/>
+        <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="162" x="86"
+              y="473.4371">Redirect to post-login page
+        </text><!--SRC=[hPA_JiCm6CHtFyKfB33a1JeWLML1Ga9A-3CW1jVvsbesTh6_1FNjYKC6aZG8IaSdlb_kBfSzHWguVAOrbDNa-2f3VetimHjos4bNMGhP0ikQT-rRhIHhxr3GUqsHXLIi6yaq5eZH6VdBHIM3KGVfNXD_-ja5IjaGGglmRuYSgDeXage3GNblD8afTmvMKAK3AGPxtD_Uh73djzg9R2PloeUIGlExjD-lYy7foz6ulix1Ibgxbig8YcP89zMsZ0OR7-OgEvfuX1tRBOZhu50cue-UZcYVAEZDeTTEnTEkU_kSBlwZujvp- -Dwr6pBVmpKpR93edq6gvs1xdObuUYZRpMF56CxbjENF-ISQ_jx7pctQVlOooqDMXdoFW40]-->
+    </g>
+</svg>

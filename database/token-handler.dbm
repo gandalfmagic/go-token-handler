@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+CAUTION: Do not modify this file unless you know what you are doing.
+ Unexpected results may occur if the code is changed deliberately.
+-->
+<dbmodel pgmodeler-ver="1.0.0" use-changelog="false" last-position="0,0" last-zoom="1" max-obj-count="4"
+	 default-schema="public" default-owner="postgres"
+	 layers="Default layer"
+	 active-layers="0"
+	 layer-name-colors="#000000"
+	 layer-rect-colors="#b4b4b4"
+	 show-layer-names="false" show-layer-rects="false">
+<database name="new_database" is-template="false" allow-conns="true">
+</database>
+
+<schema name="public" layers="0" fill-color="#e1e1e1" sql-disabled="true">
+</schema>
+
+<table name="sessions" layers="0" collapse-mode="2" max-obj-count="7" z-value="0">
+	<schema name="public"/>
+	<role name="postgres"/>
+	<position x="120" y="40"/>
+	<column name="session_id" not-null="true">
+		<type name="varchar" length="36"/>
+	</column>
+	<column name="subject" not-null="true">
+		<type name="varchar" length="0"/>
+	</column>
+	<column name="access_token" not-null="true">
+		<type name="varchar" length="0"/>
+	</column>
+	<column name="refresh_token" not-null="true">
+		<type name="varchar" length="0"/>
+	</column>
+	<column name="id_token" not-null="true">
+		<type name="varchar" length="0"/>
+	</column>
+	<column name="expires_at" not-null="true">
+		<type name="integer" length="0"/>
+	</column>
+	<constraint name="sessions_pkey" type="pk-constr" table="public.sessions">
+		<columns names="session_id" ref-type="src-columns"/>
+	</constraint>
+	<constraint name="sessions_subject_check" type="ck-constr" table="public.sessions">
+			<expression> <![CDATA[subject != '']]> </expression>
+	</constraint>
+	<constraint name="sessions_access_token_check" type="ck-constr" table="public.sessions">
+			<expression> <![CDATA[access_token != '']]> </expression>
+	</constraint>
+	<constraint name="sessions_refresh_token_check" type="ck-constr" table="public.sessions">
+			<expression> <![CDATA[refresh_token != '']]> </expression>
+	</constraint>
+	<constraint name="sessions_id_token" type="ck-constr" table="public.sessions">
+			<expression> <![CDATA[id_token != '']]> </expression>
+	</constraint>
+</table>
+
+<index name="session_subject" table="public.sessions"
+	 concurrent="false" unique="false" fast-update="false" buffering="false"
+	 index-type="btree" factor="0">
+		<idxelement use-sorting="false">
+			<column name="subject"/>
+		</idxelement>
+</index>
+
+<index name="session_expires_at" table="public.sessions"
+	 concurrent="false" unique="false" fast-update="false" buffering="false"
+	 index-type="btree" factor="0">
+		<idxelement use-sorting="false">
+			<column name="expires_at"/>
+		</idxelement>
+</index>
+
+</dbmodel>

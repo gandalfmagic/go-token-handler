@@ -1,0 +1,15 @@
+@startuml
+"User (Web client)" -> "Token handler": Request secured resource
+activate "Token handler"
+"Token handler" -[#darkcyan]-> "User (Web client)": Ask for client-session in secure cookie
+"User (Web client)" -[#darkcyan]-> "Token handler": Return client-session
+"Token handler" -[#darkcyan]> "Token handler": Verify client-session
+
+"Token handler" -[#green]> "Resource server": Request secured resource (with access-token)
+activate "Resource server"
+"Resource server" -> "Auth Server": Verify access-token
+"Auth Server" --> "Resource server": Token OK
+"Resource server" -[#green]-> "Token handler": Return secured resource
+deactivate "Resource server"
+"Token handler" --> "User (Web client)": Return secured resource
+@enduml

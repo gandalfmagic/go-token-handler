@@ -1,0 +1,25 @@
+@startuml
+"User (Web client)" -> "Token handler": Authentication Request
+activate "Token handler"
+"Token handler" -[#darkcyan]-> "User (Web client)": Save random state in secure cookie
+
+"Token handler" --> "User (Web client)": Redirect to OIDC Login
+"User (Web client)" -> "Auth Server": Authentication Request
+activate "Auth Server"
+"Auth Server" --> "Token handler": OIDC Callback
+deactivate "Auth Server"
+
+"Token handler" -[#darkcyan]-> "User (Web client)": Ask for state in secure cookie
+"User (Web client)" -[#darkcyan]-> "Token handler": Return State
+"Token handler" -[#darkcyan]> "Token handler": Verify State
+
+"Token handler" -> "Auth Server": Ask for token
+activate "Auth Server"
+"Auth Server" --> "Token handler": Return the token
+deactivate "Auth Server"
+"Token handler" -[#darkcyan]> "Token handler": Save token and link it to a new client-session
+"Token handler" -[#darkcyan]-> "User (Web client)": Save client-session in secure cookie
+
+"Token handler" --> "User (Web client)": Redirect to post-login page
+deactivate "Token handler"
+@enduml
