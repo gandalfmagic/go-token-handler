@@ -276,10 +276,10 @@ type ProxyConfigData struct {
 		Endpoint   string `yaml:"endpoint"`
 		Target     string `yaml:"target"`
 		Parameters struct {
-			IdleConnTimeout time.Duration `yaml:"idleConnTimeout"`
-			MaxIdleConns    int           `yaml:"maxIdleConns"`
-			DialKeepAlive   time.Duration `yaml:"dialKeepAlive"`
-			DialTimeout     time.Duration `yaml:"dialTimeout"`
+			IdleConnTimeout time.Duration `yaml:"idle-conn-timeout"`
+			MaxIdleConns    int           `yaml:"max-idle-conns"`
+			DialKeepAlive   time.Duration `yaml:"keep-alive"`
+			DialTimeout     time.Duration `yaml:"timeout"`
 		} `yaml:"parameters"`
 	} `yaml:"proxies"`
 }

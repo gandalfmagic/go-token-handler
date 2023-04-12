@@ -2,7 +2,7 @@ proxies:
   - endpoint: /proxy
     target: http://127.0.0.1:9081
     parameters:
-      idleConnTimeout: 120s
-      maxIdleConns: 100
-      dialKeepAlive: 30s
-      dialTimeout: 90s
+      idle-conn-timeout: 120s
+      max-idle-conns: 100
+      keep-alive: 30s
+      timeout: 90s

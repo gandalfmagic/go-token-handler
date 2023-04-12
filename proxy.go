@@ -17,8 +17,8 @@ import (
 )
 
 type ProxyConfig struct {
-	DialTimeout     time.Duration
-	DialKeepAlive   time.Duration
+	Timeout         time.Duration
+	KeepAlive       time.Duration
 	MaxIdleConns    int
 	IdleConnTimeout time.Duration
 }
@@ -52,8 +52,8 @@ func NewProxy(ctx context.Context, targetHost string, config ProxyConfig) (*http
 		Transport: &http.Transport{
 			Proxy: http.ProxyFromEnvironment,
 			DialContext: (&net.Dialer{
-				Timeout:   config.DialTimeout,
-				KeepAlive: config.DialKeepAlive,
+				Timeout:   config.Timeout,
+				KeepAlive: config.KeepAlive,
 			}).DialContext,
 			ForceAttemptHTTP2: true,
 			MaxIdleConns:      config.MaxIdleConns,

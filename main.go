@@ -122,8 +122,8 @@ func main() {
 			proxy, err := NewProxy(ctx, proxyConfig.Target, ProxyConfig{
 				IdleConnTimeout: proxyConfig.Parameters.IdleConnTimeout,
 				MaxIdleConns:    proxyConfig.Parameters.MaxIdleConns,
-				DialKeepAlive:   proxyConfig.Parameters.DialKeepAlive,
-				DialTimeout:     proxyConfig.Parameters.DialTimeout,
+				KeepAlive:       proxyConfig.Parameters.DialKeepAlive,
+				Timeout:         proxyConfig.Parameters.DialTimeout,
 			})
 			if err != nil {
 				zlog.Fatal(fmt.Sprintf("error creating proxy service for %s on %s", proxyConfig.Target, proxyConfig.Endpoint), zap.Error(err))
